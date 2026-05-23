@@ -41,5 +41,23 @@
     .close-btn{position:absolute;right:18px;top:18px;border-radius:8px;padding:6px 10px;border:none;background:transparent;color:var(--muted)}
     
 
-    @media (max-width:980px){main{grid-template-columns:1fr} aside{order:2} }
+   /* @media (max-width:980px){main{grid-template-columns:1fr} aside{order:2} } */
+
+@media (max-width: 980px) {
+  header {
+    display: flex;
+    flex-direction: column; /* Stacks the two divs vertically */
+    gap: 15px; /* Adds space between .brand and .controls */
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers the text inside the divs */
+  }
+
+  /* Optional: Fixes the internal layout of the brand div on mobile */
+  .brand {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+  }
+}
 
