@@ -41,7 +41,7 @@
     .close-btn{position:absolute;right:18px;top:18px;border-radius:8px;padding:6px 10px;border:none;background:transparent;color:var(--muted)}
     
 
-   /* @media (max-width:980px){main{grid-template-columns:1fr} aside{order:2} } */
+ @media (max-width:980px){main{grid-template-columns:1fr} aside{order:2} } 
 
 @media (max-width: 980px) {
   header {
