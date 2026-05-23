@@ -10,7 +10,8 @@
 
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}
     .brand{display:flex;align-items:center;gap:20px}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    /*.logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700} */
+    .logo{border-radius:10px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
     nav{display:flex;gap:10px;align-items:center}
     nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
     nav a:hover{color:var(--text);background:rgba(0,0,0,0.03)}
