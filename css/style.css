@@ -47,22 +47,26 @@
 /* @media (max-width:980px){main{grid-template-columns:1fr} aside{order:2} }  */
 
 @media (max-width: 980px) {
-  main{grid-template-columns:1fr} 
-  aside{order:2}    
+  main {
+    grid-template-columns: 1fr; /* Properly adds the semicolon */
+  } 
+  
+  aside {
+    order: 2; /* Ensures the sidebar pushes down below the posts */
+  }    
+
   header {
     display: flex;
-    flex-direction: column; /* Stacks the two divs vertically */
-    gap: 20px; /* Adds space between .brand and .controls */
-    align-items: center; /* Centers the content horizontally */
-    text-align: center; /* Centers the text inside the divs */
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+    text-align: center; 
   }
 
-  
- .brand {
-        display: flex;
-        /* flex-direction: column; */
-        align-items: center;
-        gap: 10px;
-    }
-}
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+} /* Only ONE closing bracket here to close the media query cleanly */
 
