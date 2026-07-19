@@ -26,8 +26,31 @@
     .posts{display:grid;gap:18px}
     .post{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,12,12,0.04);}
     .post h2{margin:0;font-size:1.15rem}
-    .meta{font-size:0.85rem;color:var(--muted);margin:8px 0}
-    .excerpt{margin:8px 0;color:var(--muted)}
+    /*.meta{font-size:0.85rem;color:var(--muted);margin:8px 0}*/
+	.meta {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center; /* Keeps text perfectly aligned vertically */
+		  width: 100%;        /* Ensures the container takes up full width */
+		  font-size:0.85rem;
+		  color:var(--muted);
+		  margin:8px 0;
+		}
+    /*.excerpt{margin:8px 0;color:var(--muted)}*/
+	.short {
+			display: -webkit-box;
+			-webkit-line-clamp: 5;   /* Number of visible lines */
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			transition: all .3s ease;
+		}
+
+		/* Expanded state */
+	.short.expanded {
+			-webkit-line-clamp: unset;
+			display: block;
+			/*overflow: visible;*/
+		}
     .read-more{display:inline-block;margin-top:10px;text-decoration:none;color:var(--accent)}
 
     aside .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,12,12,0.04)}
@@ -61,6 +84,22 @@
   width: 100%;
   height: 100%;
 } 
+
+* Show only a few lines initially */
+
+
+/* See More button */
+.toggle-btn {
+    color: var(--accent);
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 8px;
+    user-select: none;
+}
+.toggle-btn,.read-more {
+    cursor: pointer !important;
+}
 
 /* @media (max-width:980px){main{grid-template-columns:1fr} aside{order:2} }  */
 
