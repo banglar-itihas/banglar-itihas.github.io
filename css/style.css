@@ -85,6 +85,14 @@
   height: 100%;
 } 
 
+.video-container-show iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
 /* Show only a few lines initially */
 
 
@@ -122,4 +130,3 @@
         gap: 10px;
     }
 }
-
