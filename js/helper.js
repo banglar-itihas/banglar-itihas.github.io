@@ -54,14 +54,15 @@
 		//post.appendChild(button);
 		const hasIframe = post.querySelector('iframe') !== null;
 
-		const vContainerShow = post.querySelector('video-container-show') !== null;
+		
 		// Find the .meta div inside the current post
 		const metaDiv = post.querySelector('.meta');
 	  
-		if (metaDiv && (!hasIframe || vContainerShow) ) {
+		/*if (metaDiv && !hasIframe) ) {
 			
 			metaDiv.append(button);
-		}
+		}*/
+		metaDiv.append(button);
 
 		let expanded = false;
 
